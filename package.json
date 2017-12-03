@@ -1,0 +1,47 @@
+{
+  "name": "stadsplan",
+  "version": "0.0.1",
+  "author": "Marcus Asplund <marcus@greatname.se> (@marcusasplund)",
+  "license": "MIT",
+  "scripts": {
+    "build": "taskr build release",
+    "start": "taskr watch",
+    "preserve": "yarn run build",
+    "serve": "serve release -s -p 4000"
+  },
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/marcusasplund/stadsplan.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marcusasplund/stadsplan/issues"
+  },
+  "homepage": "https://github.com/marcusasplund/stadsplan#readme",
+  "devDependencies": {
+    "@taskr/clear": "^1.1.0",
+    "@taskr/concat": "^1.1.0",
+    "@taskr/esnext": "^1.1.0",
+    "@taskr/htmlmin": "^1.1.0",
+    "@taskr/postcss": "^1.1.2",
+    "@taskr/rev": "^1.1.0",
+    "@taskr/sass": "^1.1.0",
+    "@taskr/uglify": "^1.1.0",
+    "@taskr/watch": "^1.1.0",
+    "autoprefixer": "^7.1.4",
+    "browser-sync": "^2.18.13",
+    "rollup": "^0.51.2",
+    "rollup-plugin-buble": "^0.18.0",
+    "rollup-plugin-commonjs": "^8.1.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-replace": "^2.0.0",
+    "serve": "^6.0.6",
+    "taskr": "^1.1.0",
+    "taskr-standard": "^1.0.1",
+    "workbox-build": "^2.1.2"
+  },
+  "dependencies": {
+    "leaflet": "^1.2.0",
+    "leaflet-rastercoords": "^1.0.2"
+  }
+}
