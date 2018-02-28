@@ -34,7 +34,5 @@ Open up application at http://localhost:4000/ in browser
     $ yarn build
 
 ````
-This will generate a release directory with your minified/rev'd assets.
+This will generate a build directory with your minified/rev'd assets.
 
-
-This will use serve to statically serve your app from the release directory.
