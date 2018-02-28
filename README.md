@@ -1,10 +1,13 @@
 # stadsplanen
 
+[![GitHub issues](https://img.shields.io/github/issues/marcusasplund/stadsplanen.svg)](https://github.com/marcusasplund/stadsplanen/issues)
+[![Build status](https://travis-ci.org/marcusasplund/stadsplanen.svg?branch=master)](https://travis-ci.org/marcusasplund/stadsplanen)
+[![dependencies](https://david-dm.org/marcusasplund/stadsplanen.svg)](https://david-dm.org/marcusasplund/stadsplanen)
+
 [![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
-## heads up: this is a work in progress!!
 
-Offline support with service worker
+[demo](https://pap.as/stadsplanen) Offline support with service worker
 
 ## installation
 
@@ -15,7 +18,7 @@ Offline support with service worker
 
     $ yarn
 
-    $ yarn start 
+    $ yarn start
 ````
 
 Open up application at http://localhost:4000/ in browser
@@ -23,17 +26,10 @@ Open up application at http://localhost:4000/ in browser
 ## build a release
 
 ````bash
-    $ yarn run build
+    $ yarn build
 
 ````
 This will generate a release directory with your minified/rev'd assets.
 
-
-## serve static
-
-````bash
-    $ yarn run serve
-
-````
 
 This will use serve to statically serve your app from the release directory.
