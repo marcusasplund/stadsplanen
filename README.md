@@ -7,7 +7,11 @@
 [![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
 
-[demo](https://pap.as/stadsplanen) Offline support with service worker
+[demo](https://pap.as/stadsplanen)
+
+[Medium article](https://medium.com/@marcusasplund/huge-images-on-small-devices-189f13f59014)
+
+Offline support with service worker
 
 ## installation
 
