@@ -1,7 +1,7 @@
 import L from 'leaflet'
 import 'leaflet-rastercoords'
 import './utils/permalink'
-import {registerWorker} from './utils/register-worker'
+import './styles/app.scss'
 
 const init = () => {
   let img = [
@@ -31,5 +31,3 @@ const init = () => {
 }
 
 init('map')
-
-registerWorker()

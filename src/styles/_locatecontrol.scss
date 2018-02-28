@@ -1,0 +1,58 @@
+.leaflet-control-locate a {
+  font-size:1.4em;
+  color:#444;
+  cursor:pointer;
+}
+.leaflet-control-locate.leaflet-bar.leaflet-control > a > i {
+  padding-top: 3px;
+}
+.leaflet-control-locate.leaflet-bar.leaflet-control > a > i:after {
+  content:'location_on';
+}
+.leaflet-control-locate.leaflet-bar.leaflet-control > a > i.fa-spin:after {
+  content:'autorenew';
+}
+.leaflet-control-locate.leaflet-bar.leaflet-control.active.following > a > i:after {
+  content:'location_on';
+}
+.leaflet-control-locate.active a {
+  color:#2074B6;
+}
+.leaflet-control-locate.active.following a {
+  color:#FC8428;
+}
+
+// Spinning Icons
+// --------------------------
+
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+          animation: fa-spin 2s infinite linear;
+}
+
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+          animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}

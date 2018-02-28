@@ -22,7 +22,6 @@
     <meta content="yes" name="mobile-web-app-capable">
     <meta content="yes" name="apple-mobile-web-app-capable">
     <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
-    <link rel="stylesheet" type="text/css" href="./app.css"/>
   </head>
   <body>
     <noscript>
@@ -30,5 +29,17 @@
     </noscript>
     <div id="map"></div>
     <script src="./index.js"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./sw.js')
+        .then(function (registration) {
+          console.log('Service Worker registration successful with scope: ',
+          registration.scope)
+        })
+        .catch(function (err) {
+          console.log('Service Worker registration failed: ', err)
+        })
+      }
+    </script>
   </body>
 </html>
