@@ -1,7 +1,6 @@
 # stadsplanen
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/marcusasplund/stadsplanen.svg)](https://greenkeeper.io/)
-
 [![GitHub issues](https://img.shields.io/github/issues/marcusasplund/stadsplanen.svg)](https://github.com/marcusasplund/stadsplanen/issues)
 [![Build status](https://travis-ci.org/marcusasplund/stadsplanen.svg?branch=master)](https://travis-ci.org/marcusasplund/stadsplanen)
 [![dependencies](https://david-dm.org/marcusasplund/stadsplanen.svg)](https://david-dm.org/marcusasplund/stadsplanen)
