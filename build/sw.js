@@ -20,7 +20,7 @@ importScripts('workbox-sw.prod.v2.1.2.js');
 const fileManifest = [
   {
     "url": "3aba7dfdcafe6b33db5996d6185d39ca.js",
-    "revision": "1bea209fda7c686369021304a453e370"
+    "revision": "6c3ff5ff1e4735ffff3355cb7145646a"
   },
   {
     "url": "index.html",
@@ -32,7 +32,7 @@ const fileManifest = [
   },
   {
     "url": "stadsplan.js",
-    "revision": "6a2e9c73f18984c7b1eab3b0bfb742d0"
+    "revision": "003fb8a581434b5e2916edf29eef2bfc"
   }
 ];
 
