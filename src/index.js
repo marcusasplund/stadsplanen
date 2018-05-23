@@ -5,8 +5,10 @@ import './styles/app.scss'
 
 const init = () => {
   let img = [
-    21723, // original width
-    15594  // original height of image
+    // original width
+    21723,
+    // original height of image
+    15594
   ]
   // create the map
   let map = L.map('map', {
