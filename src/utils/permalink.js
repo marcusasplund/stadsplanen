@@ -18,7 +18,7 @@
   }
 }(function (L) {
   L.Permalink = {
-      // gets the map center, zoom-level and rotation from the URL if present, else uses default values
+    // gets the map center, zoom-level and rotation from the URL if present, else uses default values
     getMapLocation: (zoom, center) => {
       'use strict'
       zoom = (zoom || zoom === 0) ? zoom : 18
@@ -43,7 +43,7 @@
       let shouldUpdate = true
       let updatePermalink = function () {
         if (!shouldUpdate) {
-                  // do not update the URL when the view was changed in the 'popstate' handler (browser history navigation)
+          // do not update the URL when the view was changed in the 'popstate' handler (browser history navigation)
           shouldUpdate = true
           return
         }
@@ -62,8 +62,8 @@
 
       map.on('moveend', updatePermalink)
 
-          // restore the view state when navigating through the history, see
-          // https://developer.mozilla.org/en-US/docs/Web/API/WindowEventHandlers/onpopstate
+      // restore the view state when navigating through the history, see
+      // https://developer.mozilla.org/en-US/docs/Web/API/WindowEventHandlers/onpopstate
       window.addEventListener('popstate', (event) => {
         if (event.state === null) {
           return
