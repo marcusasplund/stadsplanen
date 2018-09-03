@@ -35,7 +35,7 @@
           zoom = parseInt(parts[2].slice(0, -1), 10)
         }
       }
-      return {zoom: zoom, center: center}
+      return { zoom: zoom, center: center }
     },
 
     setup: (map) => {
