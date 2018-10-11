@@ -14,7 +14,7 @@
   "homepage": "https://github.com/marcusasplund/stadsplan#readme",
   "scripts": {
     "start": "standard && parcel src/index.html -p 3000 --open",
-    "build": "standard && parcel build src/index.html -d build --public-url ./ && workbox generateSW"
+    "build": "standard && parcel build src/index.html -d build --public-url ./ && workbox generateSW workbox-config.js"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.0",
