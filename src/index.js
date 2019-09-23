@@ -4,22 +4,22 @@ import './utils/permalink'
 import './styles/app.scss'
 
 const init = () => {
-  let img = [
+  const img = [
     // original width
     21723,
     // original height of image
     15594
   ]
   // create the map
-  let map = L.map('map', {
+  const map = L.map('map', {
     minZoom: 3
   })
 
   // assign map and image dimensions
-  let rc = new L.RasterCoords(map, img)
+  const rc = new L.RasterCoords(map, img)
   map.setMaxZoom(rc.zoomLevel())
   // set the view on a marker ...
-  let link = L.Permalink.getMapLocation(3, rc.unproject([img[0], img[1]]))
+  const link = L.Permalink.getMapLocation(3, rc.unproject([img[0], img[1]]))
   map.setZoom(link.zoom)
   map.panTo(link.center)
 

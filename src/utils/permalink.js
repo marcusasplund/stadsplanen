@@ -25,8 +25,8 @@
       center = (center) || [52.26869, -113.81034]
 
       if (window.location.hash !== '') {
-        let hash = window.location.hash.replace('#', '')
-        let parts = hash.split(',')
+        const hash = window.location.hash.replace('#', '')
+        const parts = hash.split(',')
         if (parts.length === 3) {
           center = {
             lat: parseFloat(parts[0]),
@@ -41,19 +41,19 @@
     setup: (map) => {
       'use strict'
       let shouldUpdate = true
-      let updatePermalink = function () {
+      const updatePermalink = function () {
         if (!shouldUpdate) {
           // do not update the URL when the view was changed in the 'popstate' handler (browser history navigation)
           shouldUpdate = true
           return
         }
 
-        let center = map.getCenter()
-        let hash = '#' +
+        const center = map.getCenter()
+        const hash = '#' +
                       Math.round(center.lat * 100000) / 100000 + ',' +
                       Math.round(center.lng * 100000) / 100000 + ',' +
                       map.getZoom() + 'z'
-        let state = {
+        const state = {
           zoom: map.getZoom(),
           center: center
         }
