@@ -8,4 +8,6 @@ node_modules
 
 # Compiled
 dist
+build
 .cache
+yarn.lock
