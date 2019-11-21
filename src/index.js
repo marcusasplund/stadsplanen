@@ -18,7 +18,7 @@ const init = () => {
   // assign map and image dimensions
   const rc = new L.RasterCoords(map, img)
   map.setMaxZoom(rc.zoomLevel())
-  // set the view on a marker ...
+  // set the view
   const link = L.Permalink.getMapLocation(3, rc.unproject([img[0], img[1]]))
   map.setZoom(link.zoom)
   map.panTo(link.center)
