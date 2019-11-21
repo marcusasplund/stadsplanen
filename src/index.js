@@ -5,9 +5,9 @@ import './styles/app.scss'
 
 const init = () => {
   const img = [
-    // original width
+    // width of original image
     21723,
-    // original height of image
+    // height of original image
     15594
   ]
   // create the map
